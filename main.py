@@ -1,9 +1,13 @@
 from random import randint
-print("Введите количество цифр") 
-num = int(input()) 
+
+print("Введите количество цифр")
+
+num = int(input())
+
 symapolozh = 0
 symaotric = 0
-spisok = [] 
+spisok = []
+
 for i in range(num): 
     rnd = randint(-100, 100) 
     if rnd == 0: 
@@ -13,7 +17,8 @@ for i in range(num):
         symapolozh = symapolozh + rnd
     elif rnd < 0: 
         symaotric = symaotric + rnd
-    spisok.append(rnd) 
-print("Сумма положительных чисел равна: ", symapolozh)
-print("Сумма отрицательных чисел равна: ", symaotric)
-print("Полный список чисел: ", spisok)
+    spisok.append(rnd)
+
+    print("Сумма положительных: ", symapolozh)
+    print("Сумма отрицательных=: ", symaotric)
+    print("Список чисел: ", spisok)
